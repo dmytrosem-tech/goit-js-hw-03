@@ -1,17 +1,16 @@
 const user = {
-  name: 'Mango',
+  name: "Mango",
   age: 20,
-  hobby: 'html',
+  hobby: "html",
   premium: true,
+  skills: {
+    lazy: 5,
+    smart: 1,
+  },
 };
 
-user.mood = 'happy';
-user.hobby = 'skydiving';
+user.mood = "happy";
+user.hobby = "skydiving";
 user.premium = false;
 
-
-const keys = Object.keys(user);
-const values = Object.values(user);
-for (let i of keys) {
-    
-}
+Object.entries(user).forEach((item) => console.log(`${item[0]}: ${item[1]}`));
